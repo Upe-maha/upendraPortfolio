@@ -1,0 +1,648 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman";
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Changed from height to min-height */
+  background: #121212;
+  overflow: hidden; /* Prevent any overflow */
+}
+
+
+nav {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(#24252a, black);
+}
+nav img {
+  height: 100px;
+  width: 200px;
+  border-radius: 40px;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: goldenrod;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+}
+nav ul li a:hover {
+  border: 1px solid;
+}
+
+.detel {
+  margin-left: 8%;
+  margin-top: 15%;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+span {
+  color: orange;
+}
+
+.detel p {
+  color: #fff;
+  line-height: 22px;
+}
+.detel button {
+  border: none;
+
+  border-radius: 10px;
+  padding: 10px 18px;
+  margin-right: 20px;
+  font-size: large;
+  color: rgb(221, 221, 252);
+  background-color: orange;
+  border: 1px solid transparent;
+}
+.detel button:hover {
+  color: yellow;
+  cursor: pointer;
+}
+.detel a {
+  background-color: blueviolet;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+.detel a:hover {
+  background-color: transparent;
+  border: 1px solid;
+}
+.images {
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  z-index: 1; /* Ensure it stays behind content */
+}
+.images img {
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+
+.shape {
+  height: 100%;
+  width: auto;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+.images:hover .shape {
+  bottom: 30px;
+}
+.image:hover .boy {
+  left: 0cap;
+}
+.c1 {
+  margin-left: 85%;
+  color: rgb(12, 228, 231);
+  position: relative;
+  bottom: 25%;
+}
+.c1 hr {
+  margin-right: 50px;
+}
+/* Image Slider */
+.slider-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 2rem auto;
+  overflow: hidden;
+  
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+@media (max-width: 480px) {
+  .slide {
+    height: 250px;
+  }
+  
+  .prev, .next {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+.about {
+  width: 100%;
+  padding: 100px 0px;
+  background-color: #121212;
+}
+.about img {
+  height: auto;
+  width: 430px;
+  border-radius: 50px;
+}
+.about-text {
+  width: 550px;
+}
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-text h2 {
+  color: gold;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.about-text h2 span {
+  color: rgb(223, 122, 122);
+}
+.about-text h5 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+span {
+  color: rgb(255, 226, 60);
+}
+.about-text p {
+  color: #fcfc;
+
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+  text-align: justify;
+}
+button {
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+button:hover {
+  background-color: transparent;
+  border: 1px solid;
+  cursor: pointer;
+}
+.service ui li i {
+  margin-left: auto;
+  color: #f0e8d2;
+}
+.service {
+  background: #212121;
+  width: 100%;
+  padding: 100px 0px;
+}
+.title {
+  color: gold;
+  font-size: 75px;
+  margin: 30px auto;
+  text-align: center;
+}
+.title span {
+  color: rgb(250, 115, 115);
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+.card {
+  height: 365px;
+  width: 335px;
+  padding: 20px 35px;
+  background-color: #191919;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.card i {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 25px 0px;
+  color: #f17ea2;
+}
+h5 {
+  color: white;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+.pra p {
+  color: #fcfc;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+.card .button {
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+.card .button:hover {
+  background-color: transparent;
+  border: 1px solid;
+  cursor: pointer;
+}
+.contact-me {
+  width: 100%;
+  height: 290px;
+  background: #191919;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-me p {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.contact-me .button-two {
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+.contact-me .button-two:hover {
+  background-color: transparent;
+  border: 1px solid;
+  cursor: pointer;
+}
+footer{
+  color: white;
+  width: 100%;
+  height: 500px;
+  padding: 10px;
+  background-color: #0a0909;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  height: 99%;
+  width: 100%;
+   
+}
+.left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.social{
+  display: flex;
+}
+.social a{
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: gold;
+  border-radius: 50%;
+  margin: 22px 10px;
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+ 
+}
+.social a:hover{
+  transform: scale(1.3);
+  transition: .3s;
+}
+.end{
+  position: absolute;
+  color: blueviolet;
+  bottom : 20px;
+  font-size: 14px;
+ 
+}
+
+.right {
+  width: 90%;
+  max-width: 600px;
+  margin: 10px;
+}
+
+#form {
+  padding: 2rem;
+  background: rgb(114, 105, 49);
+  border-radius: 10px;
+  color: white;
+  height: 90%;
+}
+
+.input-box {
+  margin: 0.3rem 0;
+}
+
+.input-box input,
+.input-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.3rem 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.submit {
+  width: 100%;
+  padding: 0.8rem;
+  background: #ff473d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.submit:hover {
+  background: #ff362b;
+}
+
+#responseMessage {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+  nav {
+    padding: 15px 20px;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+    color: goldenrod;
+    font-size: 24px;
+    position: absolute;
+    right: 20px;
+    top: 35px;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    background: #24252a;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    padding: 20px;
+  }
+
+  .nav-links.active {
+    display: block;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .hero {
+    height: auto;
+    padding: 80px 0 50px; /* Add top padding for nav */
+  }
+
+  .detel {
+    margin: 100px 5% 0;
+    text-align: center;
+  }
+
+  .images {
+    position: relative;
+    width: 100%;
+    right: 0;
+    margin-top: 30px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .shape {
+    display: none;
+  }
+
+  .boy {
+    position: relative!important;
+    left: 0!important;
+    transform: none!important;
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+  }
+
+
+  .detel {
+    margin-top: 80px; /* Add space below fixed nav */
+    position: relative;
+    z-index: 2;
+  }
+
+  .c1 {
+    position: static;
+    margin: 30px auto;
+    text-align: center;
+  }
+  /* About Section */
+  .main {
+    flex-direction: column;
+  }
+
+  .about img {
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 30px;
+  }
+
+  .about-text {
+    width: 90%;
+    text-align: center;
+  }
+
+  /* Services Section */
+  .box {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90%;
+    margin: 15px 0;
+  }
+
+  /* Contact Section */
+  .footer {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+  }
+
+  .right {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+
+  #form {
+    padding: 15px;
+    height: auto;
+  }
+
+  .input-box input,
+  .input-box textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .submit {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .left {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .detel h1 {
+    font-size: 32px;
+  }
+
+  .about-text h2 {
+    font-size: 40px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav img {
+    width: 150px;
+    height: 75px;
+  }
+
+  .detel h1 {
+    font-size: 28px;
+  }
+
+  .detel a, .detel button {
+    margin: 10px 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .contact-me p {
+    font-size: 24px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .input-box input, .input-box textarea {
+    font-size: 14px;
+  }
+
+  .submit {
+    padding: 10px;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  nav {
+    position: fixed; /* Fix nav to top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .detel {
+    margin-top: 120px; /* Compensate for fixed nav */
+  }
+
+  #form {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .input-box {
+    margin: 10px 0;
+  }
+}
